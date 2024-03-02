@@ -1,15 +1,15 @@
 
 
-import mysql2 from 'mysql2'
+// import mysql2 from 'mysql2'
 
-import express from 'express'
-import cors from 'cors'
-import dotenv from 'dotenv';
-import session from 'express-session';
-import cookieParser from 'cookie-parser'
-import bcrypt from 'bcrypt'
-import { v4 as uuidv4 } from 'uuid';
-import jwt from'jsonwebtoken';
+// import express from 'express'
+// import cors from 'cors'
+// import dotenv from 'dotenv';
+// import session from 'express-session';
+// import cookieParser from 'cookie-parser'
+// import bcrypt from 'bcrypt'
+// import { v4 as uuidv4 } from 'uuid';
+// import jwt from'jsonwebtoken';
 const mysql2 = require('mysql2');
 const express = require('express')
 const dotenv = require('dotenv');
