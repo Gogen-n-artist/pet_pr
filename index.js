@@ -1,17 +1,21 @@
-// const mysql2 = require('mysql2');
+const mysql2 = require('mysql2');
 
-import mysql2 from 'mysql2'
-// const express = require('express')
-import express from 'express'
-import cors from 'cors'
-import dotenv from 'dotenv';
-import session from 'express-session';
-import cookieParser from 'cookie-parser'
-import bcrypt from 'bcrypt'
-import { v4 as uuidv4 } from 'uuid';
+// import mysql2 from 'mysql2'
+const express = require('express')
+// import express from 'express'
+// import cors from 'cors'
+// import dotenv from 'dotenv';
+// import session from 'express-session';
+// import cookieParser from 'cookie-parser'
+// import bcrypt from 'bcrypt'
+// import { v4 as uuidv4 } from 'uuid';
 // import jwt from'jsonwebtoken';
-
-// var cors = require('cors')
+const dotenv = require('dotenv');
+var cors = require('cors')
+var session = require('express-session')
+const cookieParser = require('cookie-parser');
+const bcrypt = require('bcrypt');
+const uuidv4  =require('uuid')
 dotenv.config();
 
 
@@ -440,7 +444,7 @@ app.get('/logout', (req, res) => {
   res.clearCookie('user_id');
   res.send('Logged out successfully');
 });
-const PORT = 5000;
+const PORT = 5001;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
